@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            //Title: settings below
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textSize="40sp" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"></Space>
+
+
+            //Change username below
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tutor_change_username_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="Change username"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"></Space>
+
+            //Change password below
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tutor_change_password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="Change password"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"></Space>
+
+            //About us below
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tutor_about_us_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="About us"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"></Space>
+
+            //Report a bug below
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tutor_report_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="Report a bug"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

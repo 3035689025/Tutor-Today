@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/parent_post_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            //Title: Request
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Request"
+                    android:textSize="40sp" />
+
+
+            </LinearLayout>
+
+            // lesson specifications
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lesson specifications"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.391"
+                    tools:layout_editor_absoluteY="130dp" />
+
+
+            </LinearLayout>
+
+
+            //Subject
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Title
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Subject"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"></Space>
+
+                //Line 1 of buttons
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/requestS_chinese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Chinese"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="English"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_maths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:minWidth="0dp"
+                        android:text="maths"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_ICT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:minWidth="0dp"
+                        android:text="ICT"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+
+                </LinearLayout>
+
+                // line 2 of buttons
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/requestS_LS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="liberal studies"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_general"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="general"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="history"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+
+                </LinearLayout>
+
+                // line 3 of buttons
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/requestS_geography"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="geography"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_chinese_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="chinese history"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_arts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:minWidth="0dp"
+                        android:text="arts"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+
+                </LinearLayout>
+
+                // line 4 of buttons
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/requestS_chinese_lit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Chinese literature"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_english_lit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="english literature"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+
+                </LinearLayout>
+
+                // line 5 of buttons
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/requestS_BAFS_acc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="BAFS-Acc"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_BAFS_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="BAFS-MAN"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_econ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="economics"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_m1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:minWidth="0dp"
+                        android:text="m1"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+
+                </LinearLayout>
+
+                // line 6 of buttons
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/requestS_physics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="physics"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_chemistry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="chemistry"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_bio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="biology"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_m2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:minWidth="0dp"
+                        android:text="m2"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                </LinearLayout>
+                //end of subject buttons
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"></Space>
+
+            //Tuition fee
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Tuition fee
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuition fee"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+                //salary
+
+                <EditText
+                    android:id="@+id/requestS_salary"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="salary per hour" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"></Space>
+
+
+            //Lesson length
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Lesson length
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lesson duration"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+
+                //length
+
+                <EditText
+                    android:id="@+id/requestS_lesson_length"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="hours" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"></Space>
+
+            //Lessons per week
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Lesson(s) per week
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lesson(s) per week"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+
+                //lessons
+
+                <EditText
+                    android:id="@+id/requestS_lessons_per_week"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="number of lessons" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"></Space>
+
+            //Other specifications
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Other specifications
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other specifications"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+
+                //specifications
+
+                <EditText
+                    android:id="@+id/requestS_specifications"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="e.g. chosen elective modules of the subject" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"></Space>
+
+
+            // Student information
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60sp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student information"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.391"
+                    tools:layout_editor_absoluteY="130dp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"></Space>
+
+
+            // gender
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Title
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"></Space>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/requestS_gender_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="male"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_gender_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="female"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Button
+                        android:id="@+id/requestS_gender_others"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="others"
+                        android:textSize="13dp"
+                        tools:layout_editor_absoluteX="137dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"></Space>
+
+            //Current grade
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Current grade
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Current grade"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+
+                //grade
+
+                <EditText
+                    android:id="@+id/requestS_current_grade"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="e.g. primary 5" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"></Space>
+
+            //Tuition location
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Tuition location
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuition location"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+
+                //district
+
+                <EditText
+                    android:id="@+id/requestS_district"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="district" />
+
+            </LinearLayout>
+
+
+            //Post button below
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"></Space>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/requestS_enter"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Post"
+                    android:onClick="onClick"
+                    tools:layout_editor_absoluteX="137dp"
+                    tools:layout_editor_absoluteY="239dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

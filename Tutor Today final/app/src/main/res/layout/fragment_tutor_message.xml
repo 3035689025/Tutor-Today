@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Messages"
+                        android:textSize="40sp" />
+
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"></Space>
+
+                // message 1 below
+
+                <LinearLayout
+                    android:id="@+id/tutor_message_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Request #"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/tutor_message_request_ID1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    //subject
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject:  "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_subject1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //salary
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salary:       $"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_salary1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      per hour"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //lesson duration
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lesson duration:       "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_length1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      hour(s)"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //Lesson per week
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lessons:      "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_lessons1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      per week"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status:   "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/tutor_message_status1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tutor_message_contact1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Please contact the parent via:   "
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                            <TextView
+                                android:id="@+id/tutor_message_email1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"></Space>
+
+                //message 1 above
+
+                // message 2 below
+
+                <LinearLayout
+                    android:id="@+id/tutor_message_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Request #"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/tutor_message_request_ID2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    //subject
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject:  "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_subject2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //salary
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salary:       $"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_salary2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      per hour"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //lesson duration
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lesson duration:       "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_length2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      hour(s)"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //Lesson per week
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lessons:      "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_lessons2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      per week"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status:   "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/tutor_message_status2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tutor_message_contact2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Please contact the parent via:   "
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                            <TextView
+                                android:id="@+id/tutor_message_email2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"></Space>
+
+                //message 2 above
+
+                // message 3 below
+
+                <LinearLayout
+                    android:id="@+id/tutor_message_layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Request #"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/tutor_message_request_ID3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    //subject
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject:  "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_subject3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //salary
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salary:       $"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_salary3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      per hour"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //lesson duration
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lesson duration:       "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_length3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      hour(s)"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //Lesson per week
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lessons:      "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_lessons3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      per week"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status:   "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/tutor_message_status3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tutor_message_contact3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Please contact the parent via:   "
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                            <TextView
+                                android:id="@+id/tutor_message_email3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"></Space>
+
+                //message 3 above
+
+                // message 4 below
+
+                <LinearLayout
+                    android:id="@+id/tutor_message_layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Request #"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/tutor_message_request_ID4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    //subject
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject:  "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_subject4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //salary
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salary:       $"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_salary4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      per hour"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //lesson duration
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lesson duration:       "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_length4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      hour(s)"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+                    //Lesson per week
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lessons:      "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:id="@+id/tutor_message_lessons4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="      per week"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status:   "
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                        <TextView
+                            android:id="@+id/tutor_message_status4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.391"
+                            tools:layout_editor_absoluteY="20dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tutor_message_contact4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Please contact the parent via:   "
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                            <TextView
+                                android:id="@+id/tutor_message_email4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.391"
+                                tools:layout_editor_absoluteY="20dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"></Space>
+
+                //message 4 above
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

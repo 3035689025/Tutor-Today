@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            // Change username
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\n\nChange username"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.391"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    tools:layout_editor_absoluteY="130dp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            //New username and new username
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //New username
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\n\nNew username"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+
+                //new username
+
+                <EditText
+                    android:id="@+id/cusername_new_username"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="new username" />
+
+            </LinearLayout>
+
+            //re-enter username
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //username
+
+                <EditText
+                    android:id="@+id/cusername_reenter_new_username"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="re-enter new username" />
+
+            </LinearLayout>
+
+            //password
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                //Password
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\nPassword"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+                //password
+
+                <EditText
+                    android:id="@+id/cusername_password"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:hint="password" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"></Space>
+
+            //Enter button below
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/cusername_enter"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="Confirm"
+                    tools:layout_editor_absoluteX="137dp"
+                    tools:layout_editor_absoluteY="239dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

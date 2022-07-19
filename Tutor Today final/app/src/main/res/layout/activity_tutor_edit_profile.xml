@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            //Title: Edit profile
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit profile"
+                    android:textSize="40sp" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"></Space>
+
+            //Choose avatar below
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose your new avatar"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"></Space>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:id="@+id/edit_pic0"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="#00000000"
+                        android:scaleType="centerInside" />
+
+                    <ImageButton
+                        android:id="@+id/edit_pic1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#00000000"
+                        android:scaleType="centerInside" />
+
+                    <ImageButton
+                        android:id="@+id/edit_pic2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#00000000"
+                        android:scaleType="centerInside" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"></Space>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:id="@+id/edit_pic3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="50dp"
+                        android:background="#00000000"
+                        android:scaleType="centerInside"/>
+
+                    <ImageButton
+                        android:id="@+id/edit_pic4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#00000000"
+                        android:scaleType="centerInside" />
+
+                    <ImageButton
+                        android:id="@+id/edit_pic5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="#00000000"
+                        android:scaleType="centerInside" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"></Space>
+
+            //New self-introduction
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Introduce yourself"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editP_new_self_intro"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:hint="type here"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"></Space>
+
+            //New qualifications
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State your qualifications"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.391"
+                        tools:layout_editor_absoluteY="20dp" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editP_new_qualifications"
+                    android:layout_width="400dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1.05"
+                    android:hint="type here"
+                    android:gravity="center_vertical|center_horizontal"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"></Space>
+
+            //Enter button below
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/editP_enter"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="Confirm"
+                    tools:layout_editor_absoluteX="137dp"
+                    tools:layout_editor_absoluteY="239dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

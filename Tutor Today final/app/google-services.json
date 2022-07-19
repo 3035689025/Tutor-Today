@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "477767082212",
+    "firebase_url": "https://tutor-today---comp3330-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tutor-today---comp3330",
+    "storage_bucket": "tutor-today---comp3330.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:477767082212:android:526d35c563fbf123bc8cf1",
+        "android_client_info": {
+          "package_name": "hkucs.hk.comp3330_login_page"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "477767082212-o53ek2fhfkcmp54e95d707kpmb2n8epd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hkucs.hk.comp3330_login_page",
+            "certificate_hash": "8e445d2dac5737495c0470440796ee0809a64c18"
+          }
+        },
+        {
+          "client_id": "477767082212-rvd517mnvfq0acf29fomp9csjn3gmma8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBzbB-209D7GD-gZuTbl_CCKYOLyk7_lE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "477767082212-rvd517mnvfq0acf29fomp9csjn3gmma8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
